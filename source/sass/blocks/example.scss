@@ -1,0 +1,49 @@
+.example {
+  padding: 20px;
+
+  background-color: $color-grey-light-2;
+}
+
+.example__title {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  color: $color-grey-dark;
+}
+
+.example__list {
+  text-align: center;
+}
+
+.example__item-title {
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-grey-dark;
+
+  text-transform: lowercase;
+}
+
+.example__item-definition {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+}
+
+.example__spending {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  text-align: center;
+}

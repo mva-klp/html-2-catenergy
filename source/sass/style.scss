@@ -1,1 +1,16 @@
-// Начните писать стили здесь
+@import "./variables.scss";
+@import "./fonts.scss";
+
+//blocks
+@import "./blocks/page.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/button.scss";
+@import "./blocks/catalog-sections.scss";
+@import "./blocks/how-work.scss";
+@import "./blocks/example.scss";
+@import "./blocks/range.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/developer.scss";

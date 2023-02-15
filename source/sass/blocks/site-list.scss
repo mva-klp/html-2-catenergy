@@ -1,0 +1,16 @@
+.site-list {
+  font-family: $font-title;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.site-list__link {
+  color: $color-black;
+
+  text-decoration: none;
+}

@@ -1,0 +1,25 @@
+.promo {
+  padding: 20px;
+  color: $color-white;
+  background-color: $color-primary;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../img/background/promo.jpg");
+}
+
+.promo__title {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 36px;
+}
+
+.promo__text {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  text-transform: uppercase;
+}

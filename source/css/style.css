@@ -84,6 +84,11 @@
   background-color: #68b738;
 }
 
+.button--secondary {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
 .catalog-sections__item {
   padding: 20px;
   background-color: #f2f2f2;
@@ -215,5 +220,91 @@
   line-height: 18px;
   color: #444444;
   text-decoration: none;
+}
+
+.page-main__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.catalog-list {
+  padding: 20px;
+}
+
+.card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.card__list {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.show-more__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.show-more__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-additional {
+  padding: 20px;
+}
+
+.catalog-additional__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-additional__list {
+  list-style: none;
+}
+
+.card-row__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.card-row__list {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.offer {
+  padding: 43px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #68b738;
+  background-image: url("../../img/background/catbag.jpg");
+}
+
+.offer__text {
+  font-size: 16px;
+  line-height: 20px;
 }
 /*# sourceMappingURL=style.css.map */

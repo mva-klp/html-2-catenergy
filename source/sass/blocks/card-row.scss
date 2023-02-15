@@ -1,0 +1,15 @@
+.card-row__title {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-grey-dark-2;
+
+  text-transform: uppercase;
+}
+
+.card-row__list {
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-grey-dark;
+}

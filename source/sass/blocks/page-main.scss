@@ -5,3 +5,12 @@
   line-height: 36px;
   color: $color-black;
 }
+
+.page-main__subtitle {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+.control {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+}
+
+.control--radio {
+  color: $color-grey-dark-2;
+}
+
+.control--checkbox {
+  color: $color-black;
+}

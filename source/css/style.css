@@ -230,6 +230,14 @@
   color: #000000;
 }
 
+.page-main__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .catalog-list {
   padding: 20px;
 }
@@ -306,5 +314,64 @@
 .offer__text {
   font-size: 16px;
   line-height: 20px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form__group {
+  margin: 0;
+  border: none;
+}
+
+.form__additional {
+  line-height: 16px;
+}
+
+.field-group__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.field-group__list {
+  padding: 0;
+  list-style: none;
+}
+
+.field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.field__input {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.control {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.control--radio {
+  color: #222222;
+}
+
+.control--checkbox {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

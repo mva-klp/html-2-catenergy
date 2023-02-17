@@ -1,11 +1,22 @@
 .promo {
   padding: 20px;
-  color: $color-white;
+  color: $color-black;
   background-color: $color-primary;
-  text-align: center;
+
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../img/background/promo.jpg");
+  background-image: url("../img/background/promo.jpg");
+
+  @media (max-width: $mobile-width-only) {
+    color: $color-white;
+    text-align: center;
+  }
+}
+
+.promo__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+  }
 }
 
 .promo__title {
@@ -13,6 +24,11 @@
   font-weight: 400;
   font-size: 27px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promo__text {
@@ -22,4 +38,9 @@
   line-height: 14px;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

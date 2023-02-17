@@ -1,0 +1,10 @@
+.logo {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.logo__text {
+  justify-self: center;
+}

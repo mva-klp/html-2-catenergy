@@ -12,13 +12,29 @@
   font-display: swap;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page {
+  min-width: 320px;
+  height: 100%;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -34,13 +50,34 @@
 }
 
 .site-list {
+  padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: center;
+  font-weight: 400;
   text-transform: uppercase;
   list-style: none;
+}
+@media (max-width: 767px) {
+  .site-list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .site-list {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1300px) {
+  .site-list {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .site-list__link {
@@ -50,12 +87,23 @@
 
 .promo {
   padding: 20px;
-  color: #ffffff;
+  color: #000000;
   background-color: #68b738;
-  text-align: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../img/background/promo.jpg");
+  background-image: url("../img/background/promo.jpg");
+}
+@media (max-width: 767px) {
+  .promo {
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo__container {
+    padding-left: 90px;
+  }
 }
 
 .promo__title {
@@ -64,6 +112,12 @@
   font-size: 27px;
   line-height: 36px;
 }
+@media (min-width: 768px) {
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
 
 .promo__text {
   font-family: "Oswald", "Arial", sans-serif;
@@ -71,6 +125,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .promo__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button {
@@ -308,7 +368,7 @@
   color: #ffffff;
   text-align: center;
   background-color: #68b738;
-  background-image: url("../../img/background/catbag.jpg");
+  background-image: url("../img/background/catbag.jpg");
 }
 
 .offer__text {
@@ -373,5 +433,74 @@
 
 .control--checkbox {
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .page-header__nav {
+    width: 708px;
+    margin: 0 auto;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 174px 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+}
+@media (min-width: 1300px) {
+  .page-header__nav {
+    width: 1220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header__bar {
+    width: 320px;
+    margin: 0 auto;
+    padding: 10px 20px 18px;
+    display: grid;
+    grid-template-columns: 34px 1fr 34px;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+.page-header__logo {
+  grid-column: 1/3;
+}
+
+@media (min-width: 768px) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+.page-header__list {
+  margin: 0;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.logo__text {
+  justify-self: center;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 708px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1220px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

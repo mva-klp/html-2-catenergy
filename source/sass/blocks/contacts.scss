@@ -1,5 +1,8 @@
-.contacts {
-  padding: 20px;
+.contacts__container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .contacts__text {
@@ -10,6 +13,11 @@
   color: $color-grey-dark-3;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
@@ -17,4 +25,8 @@
   line-height: 20px;
   color: $color-grey-dark;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

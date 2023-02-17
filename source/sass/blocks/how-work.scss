@@ -7,12 +7,34 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .how-work__list {
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .how-work__item {
   color: $color-grey-dark;
+
+  & + & {
+    @media (max-width: $mobile-width-only) {
+      margin-top: 20px;
+    }
+  }
 }

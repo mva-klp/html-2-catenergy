@@ -1,9 +1,14 @@
-.logo {
+.logo{
   display: grid;
   grid-template-columns: 34px 1fr;
   gap: 16px;
   align-items: center;
 }
+
+.logo--footer {
+  display: flex;
+}
+
 
 .logo__text {
   justify-self: center;

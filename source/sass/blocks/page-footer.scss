@@ -3,3 +3,12 @@
 
   background-color: $color-grey-light;
 }
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    align-items: center;
+    gap: 16px;
+  }
+}

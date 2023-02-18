@@ -6,6 +6,11 @@
   color: $color-grey-dark;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__input {
@@ -16,4 +21,9 @@
   color: $color-grey-dark;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

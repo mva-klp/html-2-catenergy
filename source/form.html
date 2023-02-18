@@ -42,14 +42,16 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
-    <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="page-main__header container">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
 
     <section class="page-main__section form">
       <h2 class="visually-hidden">Форма анкеты</h2>
 
-      <form class="form__body" method="post" action="https://echo.htmlacademy.ru/">
-        <fieldset class="form__group field-group">
+      <form class="form__container container" method="post" action="https://echo.htmlacademy.ru/">
+        <fieldset class="form__group form__group--cat field-group">
           <legend class="visually-hidden">Данные кота</legend>
 
           <ul class="field-group__list">
@@ -76,7 +78,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__group field-group">
+        <fieldset class="form__group form__group--target field-group">
           <legend class="visually-hidden">Цель программы</legend>
 
           <ul class="field-group__list">
@@ -103,10 +105,10 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__group field-group">
+        <fieldset class="form__group form__group--contacts field-group">
           <legend class="field-group__title">Контактные данные (владельца кота)</legend>
 
-          <ul class="field-group__list">
+          <ul class="field-group__list field-group__list--contacts">
             <li class="field-group__item">
               <label class="field">
                 <span class="field__label">E-mail:*</span>
@@ -123,7 +125,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__group field-group">
+        <fieldset class="form__group form__group--comment field-group">
           <legend class="field-group__title">Комментарий</legend>
 
           <label class="field">
@@ -133,10 +135,10 @@
 
         </fieldset>
 
-        <fieldset class="form__group field-group">
+        <fieldset class="form__group form__group--additional field-group">
           <legend class="field-group__title">Дополнительно</legend>
 
-          <ul class="field-group__list">
+          <ul class="field-group__list field-group__list--additional">
             <li class="field-group__item">
               <label class="control control--checkbox">
                 <input class="control__input" type="checkbox" name="additional" value="sweetener" checked>
@@ -166,9 +168,10 @@
             </li>
           </ul>
         </fieldset>
-
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <p class="form__additional">* — Обязательные поля</p>
+        <div class="form__footer">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <p class="form__additional">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
 

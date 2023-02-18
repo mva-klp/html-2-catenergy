@@ -6,10 +6,20 @@
   color: $color-grey-dark-3;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .show-more__text {
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

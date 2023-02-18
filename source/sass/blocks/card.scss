@@ -1,3 +1,9 @@
+.card {
+  @media (min-width: $tablet-width) {
+    background-color: $color-grey-light;
+  }
+}
+
 .card__title {
   font-family: $font-title;
   font-weight: 400;

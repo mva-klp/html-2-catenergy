@@ -1,3 +1,18 @@
 .catalog-list {
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.catalog-list__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 64px;
+  }
 }

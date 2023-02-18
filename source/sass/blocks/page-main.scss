@@ -4,6 +4,10 @@
   font-size: 36px;
   line-height: 1;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .page-main__subtitle {

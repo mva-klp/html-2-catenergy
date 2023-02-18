@@ -1,5 +1,14 @@
 .catalog-additional {
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.catalog-additional__container {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .catalog-additional__title {
@@ -8,8 +17,20 @@
   font-size: 24px;
   line-height: 1;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .catalog-additional__list {
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -2;
+  }
 }

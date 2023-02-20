@@ -19,7 +19,8 @@
   list-style: none;
 }
 
-.field-group__list--additional {
+.field-group__list--additional,
+.field-group__list--contacts {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,6 +29,18 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.field-group__list--contacts {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     column-gap: 80px;
   }
 }

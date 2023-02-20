@@ -660,15 +660,30 @@ img {
 }
 
 @media (min-width: 768px) {
-  .field-group__list--additional {
+  .field-group__list--additional,
+.field-group__list--contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
   }
 }
 @media (min-width: 1300px) {
-  .field-group__list--additional {
+  .field-group__list--additional,
+.field-group__list--contacts {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .field-group__list--contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+}
+@media (min-width: 1300px) {
+  .field-group__list--contacts {
     column-gap: 80px;
   }
 }

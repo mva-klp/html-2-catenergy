@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   font-family: $font-title;
   font-weight: 400;
   color: $color-white;
@@ -8,6 +9,15 @@
 
   border: none;
   background-color: $color-primary;
+
+  &:hover,
+  &:active {
+    background-color: $color-primary-ha;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--secondary {

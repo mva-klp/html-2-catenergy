@@ -131,7 +131,7 @@ img {
 }
 
 .promo {
-  padding: 20px;
+  padding: 27px 20px 20px;
   color: #000000;
   background-color: #68b738;
   background-repeat: no-repeat;
@@ -142,6 +142,7 @@ img {
   .promo {
     color: #ffffff;
     text-align: center;
+    background: url("../img/background/promo.jpg") no-repeat 50% 0, linear-gradient(to top, #ffffff 198px, #68b738 198px);
   }
 }
 
@@ -152,6 +153,8 @@ img {
 }
 
 .promo__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -164,6 +167,8 @@ img {
 }
 
 .promo__text {
+  margin: 0;
+  margin-bottom: 29px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -176,7 +181,13 @@ img {
   }
 }
 
+.promo__button {
+  padding: 14px 26px;
+  width: 100%;
+}
+
 .button {
+  display: inline-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
@@ -185,6 +196,12 @@ img {
   text-decoration: none;
   border: none;
   background-color: #68b738;
+}
+.button:hover, .button:active {
+  background-color: #5eaa2f;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--secondary {

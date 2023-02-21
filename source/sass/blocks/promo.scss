@@ -1,5 +1,5 @@
 .promo {
-  padding: 20px;
+  padding: 27px 20px 20px;
   color: $color-black;
   background-color: $color-primary;
 
@@ -10,6 +10,9 @@
   @media (max-width: $mobile-width-only) {
     color: $color-white;
     text-align: center;
+    background:
+      url("../img/background/promo.jpg") no-repeat 50% 0,
+      linear-gradient(to top, $color-white 198px, $color-primary 198px);
   }
 }
 
@@ -20,6 +23,9 @@
 }
 
 .promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-family: $font-title;
   font-weight: 400;
   font-size: 36px;
@@ -31,6 +37,9 @@
 }
 
 .promo__text {
+  margin: 0;
+  margin-bottom: 29px;
+
   font-family: $font-title;
   font-weight: 400;
   font-size: 14px;
@@ -41,4 +50,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.promo__button {
+  padding: 14px 26px;
+  width: 100%;
 }

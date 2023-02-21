@@ -3,22 +3,28 @@
   color: $color-black;
   background-color: $color-primary;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/background/promo.jpg");
-
   @media (max-width: $mobile-width-only) {
     color: $color-white;
     text-align: center;
     background:
       url("../img/background/promo.jpg") no-repeat 50% 0,
-      linear-gradient(to top, $color-white 198px, $color-primary 198px);
+      linear-gradient(to bottom, #63a63b 303px, $color-white 303px);
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 0;
+    padding-top: 31px;
+    background-color: $color-white;
   }
 }
 
 .promo__container {
   @media (min-width: $tablet-width) {
+    min-height: 810px;
+    position: relative;
     padding-left: 90px;
+    padding-right: 200px;
   }
 }
 
@@ -32,6 +38,8 @@
   line-height: 1;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+
     font-size: 60px;
   }
 }
@@ -48,11 +56,29 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+
     font-size: 20px;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
   }
 }
 
 .promo__button {
   padding: 14px 26px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }

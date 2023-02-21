@@ -9,6 +9,7 @@
   list-style: none;
 
   @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $color-grey-light-4;
     font-weight: 500;
     font-size: 20px;
     line-height: 1;
@@ -31,8 +32,48 @@
   }
 }
 
+.site-list__item {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $color-grey-light-4;
+  }
+}
+
 .site-list__link {
+  display: block;
+  padding: 22px 20px 24px;
   color: $color-black;
 
   text-decoration: none;
+
+  &:link:hover {
+    opacity: 0.6;
+  }
+
+  &:link:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    border-bottom: none;
+    padding: 17px;
+
+    .site-list__item--current &::after {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      left: 17px;
+      right: 17px;
+      height: 2px;
+      background-color: $color-primary;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+
+    .site-list__item--current &::after {
+      background-color: $color-white;
+    }
+  }
 }

@@ -22,12 +22,11 @@
 .promo__title {
   font-family: $font-title;
   font-weight: 400;
-  font-size: 27px;
-  line-height: 36px;
+  font-size: 36px;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 1;
   }
 }
 

@@ -114,7 +114,7 @@ img {
   .site-list__item--current .site-list__link::after {
     content: "";
     position: absolute;
-    bottom: 7px;
+    bottom: 8px;
     left: 17px;
     right: 17px;
     height: 2px;
@@ -131,7 +131,7 @@ img {
 }
 
 .promo {
-  padding: 27px 20px 20px;
+  padding: 27px 0 20px;
   color: #000000;
   background-color: #68b738;
 }
@@ -145,9 +145,26 @@ img {
 @media (min-width: 768px) {
   .promo {
     position: relative;
-    z-index: 0;
     padding-top: 31px;
-    background-color: #ffffff;
+    background-color: transparent;
+  }
+}
+@media (min-width: 1300px) {
+  .promo {
+    padding: 0;
+  }
+  .promo::after {
+    position: absolute;
+    content: "";
+    top: -144px;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    z-index: -2;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-color: #63a63b;
+    background: url("../img/background/promo-large.jpg");
   }
 }
 
@@ -157,6 +174,14 @@ img {
     position: relative;
     padding-left: 90px;
     padding-right: 200px;
+  }
+}
+@media (min-width: 1300px) {
+  .promo__container {
+    min-height: 553px;
+    padding-top: 82px;
+    padding-left: 80px;
+    padding-right: 610px;
   }
 }
 
@@ -200,6 +225,14 @@ img {
     width: 709px;
     height: 609px;
     z-index: -1;
+  }
+}
+@media (min-width: 1300px) {
+  .promo__img {
+    left: calc(50% - 137px);
+    top: 0;
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -816,9 +849,19 @@ img {
   color: #000000;
 }
 
+.page-header {
+  position: relative;
+}
 @media (min-width: 1300px) {
-  .page-header {
-    background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
+  .page-header::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #63a63b;
+    z-index: -3;
   }
 }
 
@@ -836,6 +879,7 @@ img {
 @media (min-width: 1300px) {
   .page-header__nav {
     width: 1220px;
+    padding: 55px 0 25px;
     grid-template-columns: 174px 50%;
     justify-content: space-between;
   }

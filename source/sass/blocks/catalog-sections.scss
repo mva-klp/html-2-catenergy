@@ -13,12 +13,12 @@
 
   background-color: $color-grey-light;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     padding: 77px 316px 57px 52px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 47px 52px 59px;
   }
 
@@ -58,7 +58,7 @@
     line-height: 1;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
     min-height: 100px;
     padding-left: 162px;
@@ -82,7 +82,7 @@
     border-radius: 50%;
     background-color: $color-primary;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
 
@@ -91,7 +91,7 @@
       right: 62px;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       width: 100px;
       height: 100px;
 
@@ -113,7 +113,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/icons/cat-slim.svg");
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
 
@@ -122,7 +122,7 @@
       right: 92px;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       width: 70px;
       height: 97px;
 
@@ -144,7 +144,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/icons/cat-pro.svg");
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
 
@@ -153,7 +153,7 @@
       right: 28px;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       width: 134px;
       height: 56px;
 
@@ -169,16 +169,16 @@
   margin-bottom: 19px;
   padding-bottom: 23px;
 
-  @media (max-width:$mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $color-grey-light-5;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 52px;
     padding-bottom: 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 27px;
   }
 

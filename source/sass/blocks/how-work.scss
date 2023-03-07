@@ -1,14 +1,34 @@
 .how-work {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    border-bottom: 1px solid $color-grey-light-4;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
 }
 
 .how-work__title {
+  margin: 0;
+  margin-bottom: 40px;
+
   font-family: $font-title;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+
     font-size: 60px;
     line-height: 1;
   }
@@ -16,12 +36,16 @@
 
 .how-work__list {
   padding: 0;
+  margin: 0;
   list-style: none;
+
+  counter-reset: how-work;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,11 +54,90 @@
 }
 
 .how-work__item {
+  position: relative;
+  z-index: 0;
+
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
   color: $color-grey-dark;
+
+  counter-increment: how-work;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    padding-top: 40px;
+    padding-right: 75px;
+
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto;
+    row-gap: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+  }
 
   & + & {
     @media (max-width: $mobile-width-only) {
       margin-top: 20px;
     }
   }
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 60px;
+    margin-top: -2px;
+
+    background-color: $color-primary;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      z-index: -1;
+
+      content: counter(how-work);
+      top: 0;
+      right: 75px;
+
+      font-family: $font-title;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 1;
+      color: $color-grey-light;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 15px;
+    }
+  }
+}
+
+.how-work__item--leaf::before {
+  background-image: url("../img/icons/leaf.svg");
+}
+
+.how-work__item--boil::before {
+  background-image: url("../img/icons/boil.svg");
+}
+
+.how-work__item--meal::before {
+  background-image: url("../img/icons/meal.svg");
+}
+
+.how-work__item--scales::before {
+  background-image: url("../img/icons/scales.svg");
 }

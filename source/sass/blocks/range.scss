@@ -1,8 +1,50 @@
+.range {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 49px 1fr 49px;
+  gap: 13px;
+  padding: 0 35px;
+}
+
+.range--before {
+  .range__toggler{
+    justify-content: flex-start;
+  }
+}
+
+.range--after {
+  .range__toggler{
+    justify-content: flex-end;
+  }
+}
+
 .range__button {
   font-family: $font-title;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 
+  border: none;
+  background-color: $color-grey-light-2;
   text-transform: uppercase;
+}
+
+.range__toggler {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+
+  height: 16px;
+  border: 1px solid $color-grey-light-6;
+  border-radius: 6px;
+  background-color: $color-white;
+}
+
+.range__toggler::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+
+  background-color: $color-primary;
+  border-radius: 6px;
 }

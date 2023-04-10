@@ -19,6 +19,12 @@
 
 .logo--footer {
   display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: center;
+    padding: 9px;
+  }
 }
 
 

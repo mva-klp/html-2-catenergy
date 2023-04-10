@@ -12,3 +12,24 @@
     gap: 16px;
   }
 }
+
+.page-footer__logo {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 10px;
+    margin-bottom: 23px;
+  }
+}
+
+.page-footer__social {
+  margin: 0;
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $color-grey-light-5;
+    border-bottom: 1px solid $color-grey-light-5;
+  }
+}
+
+.page-footer__developer {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 22px;
+  }
+}

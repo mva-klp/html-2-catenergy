@@ -1,6 +1,22 @@
 .developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   color: $color-grey-dark;
   text-decoration: none;
+
+  &:hover {
+    .developer__image{
+      color: $color-primary;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    .developer__image {
+      color: $color-primary;
+    }
+  }
 }

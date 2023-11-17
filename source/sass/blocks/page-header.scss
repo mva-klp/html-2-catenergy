@@ -13,6 +13,14 @@
     }
 
   }
+
+  &--inner {
+    border-bottom: 1px solid #D9D9D9;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
 }
 
 .page-header__nav {

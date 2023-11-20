@@ -6,10 +6,18 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-grey-light;
+    padding: 39px 38px;
+    padding-top: 0;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto min-content;
+    row-gap: 34px;
   }
 
   &__content {
     margin-bottom: 9px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
@@ -28,15 +36,30 @@
 
     text-transform: uppercase;
 
+    br {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: inline;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 24px;
+      width: 100%;
+      margin-bottom: 21px;
+      text-align: center;
     }
   }
 
   &__image {
     align-self: center;
     justify-self: center;
+
+    @media (min-width: $tablet-width) {
+      align-self: start;
+    }
   }
 
   &__list {
@@ -50,11 +73,24 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 1;
+      row-gap: 5px
+    }
+  }
+
+  &__list-title {
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid #CDCDCD;
+      padding-bottom: 9px;
     }
   }
 
   &__definition {
     text-align: right;
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid #CDCDCD;
+      padding-bottom: 9px;
+      margin-left: 0;
+    }
   }
 
   &__button {

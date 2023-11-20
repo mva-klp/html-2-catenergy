@@ -3,6 +3,14 @@
   position: relative;
   padding-top: 78px;
 
+  @media (min-width: $tablet-width) {
+    padding: 39px 38px;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $color-grey-light;
+  }
+
   &::before {
     position: absolute;
     top: 25px;
@@ -13,6 +21,14 @@
     background-image: url("../../img/icons/plus.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      top: 52px;
+      left: calc(50% - 30px);
+      background-image: url("../../img/icons/plus-60.svg");
+    }
   }
 
   &__title {
@@ -29,6 +45,15 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 22px;
+      margin-bottom: 23px;
+    }
+
+    br {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: inline;
+      }
     }
   }
 

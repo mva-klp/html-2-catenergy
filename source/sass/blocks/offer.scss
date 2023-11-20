@@ -7,10 +7,32 @@
   background-color: $color-primary;
   background-image: url("../img/background/catbag.jpg");
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 71px 124px 69px 124px;
+    background-image: url("../img/background/cat-cat.jpg");
+  }
+
   &__text {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+    z-index: 2;
+
+    br {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: inline;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 68px;
+      grid-column: 2 / -1;
+      text-align: left;
+    }
   }
 
   &::before {
@@ -24,5 +46,24 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+      top: 57px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      background-color: #68B738;
+      opacity: 0.85;
+      position: absolute;
+      left:0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
   }
 }

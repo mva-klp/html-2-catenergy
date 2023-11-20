@@ -264,7 +264,7 @@
 
         <div class="catalog-additional__promo offer">
           <h2 class="visually-hidden">Специальное предложение</h2>
-          <p class="offer__text">Закажите все и получите чехол для кота в подарок</p>
+          <p class="offer__text">Закажите все <br>и получите чехол для <br>кота в подарок</p>
         </div>
       </div>
     </section>
@@ -273,9 +273,13 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__container contacts__container--inner">
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="contacts__address">
+          <span>ул. Большая Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </p>
       </div>
-      <img src="img/map.png" width="320" height="362" alt="Карта к нашему офису">
+      <iframe class="contacts__map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad224644410c55b2ed14431db75f96f5f9b20f7bae6f613c488ede772f53925b8&amp;source=constructor"></iframe>
     </footer>
 
   </main>
@@ -321,7 +325,11 @@
       <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Разработано в</span>
         HTML Academy
-        <img class="developer__image" src="img/htmlacademy.svg" width="27" height="34" alt="" aria-hidden="true">
+        <svg class="developer__image" width="27" height="34" viewBox="0 0 27 34">
+          <path
+            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+            fill="currentColor" />
+        </svg>
       </a>
     </div>
   </footer>

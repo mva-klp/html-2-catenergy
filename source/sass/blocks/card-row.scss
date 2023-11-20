@@ -2,6 +2,13 @@
   padding-top: 13px;
   padding-bottom: 19px;
 
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+  }
+
   &__title {
     font-family: $font-title;
     font-weight: 400;
@@ -15,6 +22,7 @@
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
+      margin-bottom: 0;
     }
   }
 
@@ -30,11 +38,31 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 20px;
+      display: grid;
+      grid-template-columns: auto 74px;
+      gap: 19px;
+      justify-content: end;
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    @media (min-width: $tablet-width) {
+      justify-self: end;
+    }
+  }
+
+  &__definition {
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
     }
   }
 
   &__button {
     display: block;
     padding: 10px 20px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
   }
 }

@@ -1003,9 +1003,8 @@ img {
 }
 @media (min-width: 768px) {
   .contacts__container {
-    width: 708px;
     display: grid;
-    padding: 56px 40px;
+    padding: 56px 70px;
     grid-template-columns: 172px 172px;
     justify-content: space-between;
   }
@@ -1406,8 +1405,15 @@ img {
 .catalog-additional {
   padding: 25px 20px;
 }
+@media (min-width: 768px) {
+  .catalog-additional {
+    padding: 0 30px;
+    margin-top: 68px;
+  }
+}
 .catalog-additional__container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 @media (min-width: 1300px) {
@@ -1417,7 +1423,6 @@ img {
   }
 }
 .catalog-additional__title {
-  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -1425,19 +1430,32 @@ img {
   color: #000000;
   margin: 0;
   margin-bottom: 36px;
+  margin-right: -20px;
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  gap: 22px;
 }
 .catalog-additional__title::after {
   content: "";
-  position: absolute;
-  right: -20px;
-  top: calc(50% - 1px);
-  width: 53px;
   height: 2px;
+  width: 100%;
+  background-color: #68B738;
+}
+.catalog-additional__title::before {
+  content: "";
+  height: 2px;
+  width: 30px;
   background-color: #68B738;
 }
 @media (min-width: 768px) {
   .catalog-additional__title {
     font-size: 36px;
+    gap: 36px;
+    margin-right: -30px;
+    margin-left: -30px;
+    grid-template-columns: min-content max-content auto;
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 1300px) {
@@ -1458,6 +1476,12 @@ img {
 .catalog-additional__item {
   border-top: 1px solid #CDCDCD;
 }
+@media (min-width: 768px) {
+  .catalog-additional__item {
+    border-left: 1px solid #CDCDCD;
+    border-right: 1px solid #CDCDCD;
+  }
+}
 .catalog-additional__item:last-child {
   border-bottom: 1px solid #CDCDCD;
 }
@@ -1465,10 +1489,24 @@ img {
   margin-top: 35px;
   margin-bottom: 15px;
 }
+@media (min-width: 768px) {
+  .catalog-additional__promo {
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+}
 
 .card-row {
   padding-top: 13px;
   padding-bottom: 19px;
+}
+@media (min-width: 768px) {
+  .card-row {
+    padding: 26px 38px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+  }
 }
 .card-row__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -1483,6 +1521,7 @@ img {
 @media (min-width: 768px) {
   .card-row__title {
     font-size: 20px;
+    margin-bottom: 0;
   }
 }
 .card-row__list {
@@ -1498,11 +1537,31 @@ img {
   .card-row__list {
     font-size: 16px;
     line-height: 20px;
+    display: grid;
+    grid-template-columns: auto 74px;
+    gap: 19px;
+    justify-content: end;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .card-row__text {
+    justify-self: end;
+  }
+}
+@media (min-width: 768px) {
+  .card-row__definition {
+    margin-left: auto;
   }
 }
 .card-row__button {
   display: block;
   padding: 10px 20px;
+}
+@media (min-width: 768px) {
+  .card-row__button {
+    grid-column: 1/-1;
+  }
 }
 
 .offer {
@@ -1513,10 +1572,34 @@ img {
   background-color: #68b738;
   background-image: url("../img/background/catbag.jpg");
 }
+@media (min-width: 768px) {
+  .offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 71px 124px 69px 124px;
+    background-image: url("../img/background/cat-cat.jpg");
+  }
+}
 .offer__text {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  z-index: 2;
+}
+.offer__text br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .offer__text br {
+    display: inline;
+  }
+}
+@media (min-width: 768px) {
+  .offer__text {
+    margin-left: 68px;
+    grid-column: 2/-1;
+    text-align: left;
+  }
 }
 .offer::before {
   position: absolute;
@@ -1529,6 +1612,25 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .offer::before {
+    left: 77px;
+    top: 57px;
+  }
+}
+@media (min-width: 768px) {
+  .offer::after {
+    content: "";
+    background-color: #68B738;
+    opacity: 0.85;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 .form {

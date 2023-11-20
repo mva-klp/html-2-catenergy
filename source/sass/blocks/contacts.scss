@@ -18,9 +18,8 @@
     gap: 2px;
 
     @media (min-width: $tablet-width) {
-      width: 708px;
       display: grid;
-      padding: 56px 40px;
+      padding: 56px 70px;
       grid-template-columns: 172px 172px;
       justify-content: space-between;
     }

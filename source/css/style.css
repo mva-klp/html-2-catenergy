@@ -21,6 +21,7 @@
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .page {
@@ -992,10 +993,8 @@ img {
     justify-content: center;
   }
 }
-
 .contacts__container {
-  padding: 26px 0;
-  width: 280px;
+  padding: 26px 20px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -1021,7 +1020,9 @@ img {
     background-color: #ffffff;
   }
 }
-
+.contacts__container--inner {
+  background-color: #f2f2f2;
+}
 .contacts__text {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -1037,7 +1038,6 @@ img {
     line-height: 26px;
   }
 }
-
 .contacts__address {
   margin: 0;
   font-size: 14px;
@@ -1060,7 +1060,6 @@ img {
     font-size: 16px;
   }
 }
-
 .contacts__map {
   display: block;
   width: 100%;
@@ -1165,14 +1164,18 @@ img {
 }
 
 .catalog-list__item {
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid #EBEBEB;
 }
 .catalog-list__item:nth-of-type(even) img {
   width: 84px;
   align-self: end;
 }
 .catalog-list__item:last-of-type {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #EBEBEB;
+}
+.catalog-list__show-more {
+  border-bottom: 1px solid #EBEBEB;
+  padding: 25px 20px;
 }
 
 .catalog-list__container {
@@ -1254,12 +1257,30 @@ img {
   padding: 10px 20px;
 }
 
+.show-more {
+  text-align: center;
+  position: relative;
+  padding-top: 78px;
+}
+.show-more::before {
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 15px);
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/icons/plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .show-more__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  margin: 0;
+  margin-bottom: 8px;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
@@ -1268,11 +1289,12 @@ img {
     line-height: 22px;
   }
 }
-
 .show-more__text {
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+  margin: 0;
+  margin-bottom: 21px;
 }
 @media (min-width: 768px) {
   .show-more__text {
@@ -1280,13 +1302,17 @@ img {
     line-height: 18px;
   }
 }
-
-.catalog-additional {
-  padding: 20px 0;
+.show-more__button {
+  display: block;
+  padding: 10px 20px;
 }
 
+.catalog-additional {
+  padding: 25px 20px;
+}
 .catalog-additional__container {
   display: grid;
+  margin: 0 auto;
 }
 @media (min-width: 1300px) {
   .catalog-additional__container {
@@ -1294,13 +1320,24 @@ img {
     column-gap: 80px;
   }
 }
-
 .catalog-additional__title {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #000000;
+  margin: 0;
+  margin-bottom: 36px;
+}
+.catalog-additional__title::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: calc(50% - 1px);
+  width: 53px;
+  height: 2px;
+  background-color: #68B738;
 }
 @media (min-width: 768px) {
   .catalog-additional__title {
@@ -1312,22 +1349,39 @@ img {
     grid-column: 1/-1;
   }
 }
-
 .catalog-additional__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 @media (min-width: 1300px) {
   .catalog-additional__list {
     grid-column: 1/-2;
   }
 }
+.catalog-additional__item {
+  border-top: 1px solid #CDCDCD;
+}
+.catalog-additional__item:last-child {
+  border-bottom: 1px solid #CDCDCD;
+}
+.catalog-additional__promo {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
 
+.card-row {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
 .card-row__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   color: #222222;
+  margin: 0;
+  margin-bottom: 13px;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
@@ -1335,11 +1389,14 @@ img {
     font-size: 20px;
   }
 }
-
 .card-row__list {
   font-size: 14px;
   line-height: 1;
   color: #444444;
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .card-row__list {
@@ -1347,18 +1404,35 @@ img {
     line-height: 20px;
   }
 }
+.card-row__button {
+  display: block;
+  padding: 10px 20px;
+}
 
 .offer {
-  padding: 43px;
+  position: relative;
+  padding: 188px 60px 43px;
   color: #ffffff;
   text-align: center;
   background-color: #68b738;
   background-image: url("../img/background/catbag.jpg");
 }
-
 .offer__text {
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+}
+.offer::before {
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 39px);
+  content: "";
+  width: 78px;
+  height: 80px;
+  background-image: url("../../img/icons/icon_gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
 }
 
 .form {

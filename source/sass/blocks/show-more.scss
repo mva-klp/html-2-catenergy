@@ -1,25 +1,52 @@
-.show-more__title {
-  font-family: $font-title;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: $color-grey-dark-3;
+.show-more {
+  text-align: center;
+  position: relative;
+  padding-top: 78px;
 
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
+  &::before {
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 15px);
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/icons/plus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
-}
 
-.show-more__text {
-  font-size: 12px;
-  line-height: 16px;
-  color: $color-grey-dark;
-
-  @media (min-width: $tablet-width) {
+  &__title {
+    font-family: $font-title;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
+    color: $color-grey-dark-3;
+    margin: 0;
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-grey-dark;
+    margin: 0;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  &__button {
+    display: block;
+    padding: 10px 20px;
   }
 }

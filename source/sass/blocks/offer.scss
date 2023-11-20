@@ -1,13 +1,28 @@
 .offer {
-  padding: 43px;
+  position: relative;
+  padding: 188px 60px 43px;
 
   color: $color-white;
   text-align: center;
   background-color: $color-primary;
   background-image: url("../img/background/catbag.jpg");
-}
 
-.offer__text {
-  font-size: 16px;
-  line-height: 20px;
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 39px);
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icons/icon_gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
 }

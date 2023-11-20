@@ -1,24 +1,40 @@
-.card-row__title {
-  font-family: $font-title;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1;
-  color: $color-grey-dark-2;
+.card-row {
+  padding-top: 13px;
+  padding-bottom: 19px;
 
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-  }
-}
-
-.card-row__list {
-  font-size: 14px;
-  line-height: 1;
-  color: $color-grey-dark;
-
-  @media (min-width: $tablet-width) {
+  &__title {
+    font-family: $font-title;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1;
+    color: $color-grey-dark-2;
+    margin: 0;
+    margin-bottom: 13px;
+
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    font-size: 14px;
+    line-height: 1;
+    color: $color-grey-dark;
+    margin: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    display: block;
+    padding: 10px 20px;
   }
 }

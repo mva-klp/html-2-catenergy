@@ -13,6 +13,11 @@
     margin-top: 65px;
     margin-bottom: 82px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 84px;
+  }
 }
 
 .page-main__subtitle {

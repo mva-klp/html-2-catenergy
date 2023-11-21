@@ -13,10 +13,19 @@
     row-gap: 34px;
   }
 
+  @media (min-width: $desktop-width) {
+    row-gap: unset;
+    grid-template-rows: 1fr auto min-content;;
+  }
+
   &__content {
     margin-bottom: 9px;
     @media (min-width: $tablet-width) {
       margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 33px;
     }
   }
 
@@ -59,6 +68,10 @@
 
     @media (min-width: $tablet-width) {
       align-self: start;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 42px;
     }
   }
 

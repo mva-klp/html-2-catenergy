@@ -31,10 +31,15 @@
       padding: 56px 80px;
       width: 565px;
       background-color: $color-white;
+      grid-template-columns: 163px 155px;
     }
 
     &--inner {
       background-color: $color-grey-light;
+
+      @media (min-width: $desktop-width) {
+        background-color: $color-white;
+      }
     }
   }
 

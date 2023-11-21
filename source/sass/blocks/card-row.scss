@@ -9,6 +9,13 @@
     row-gap: 25px;
   }
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 244px;
+    align-items: center;
+    column-gap: 38px;
+    padding: 16px 0;
+  }
+
   &__title {
     font-family: $font-title;
     font-weight: 400;
@@ -44,16 +51,28 @@
       justify-content: end;
       margin-bottom: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr auto;
+    }
   }
   &__text {
     @media (min-width: $tablet-width) {
       justify-self: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-self: start;
     }
   }
 
   &__definition {
     @media (min-width: $tablet-width) {
       margin-left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 44px;
     }
   }
 
@@ -63,6 +82,11 @@
 
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 3 / -1;
+      padding: 7px 26px;
     }
   }
 }

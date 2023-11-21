@@ -6,12 +6,19 @@
   text-align: center;
   background-color: $color-primary;
   background-image: url("../img/background/catbag.jpg");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 71px 124px 69px 124px;
     background-image: url("../img/background/cat-cat.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto;
+    padding: 185px 42px 42px;
+    background-image: url("../img/background/catbag.jpg");
   }
 
   &__text {
@@ -33,6 +40,11 @@
       grid-column: 2 / -1;
       text-align: left;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
   &::before {
@@ -52,6 +64,11 @@
       left: 77px;
       top: 57px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: calc(50% - 39px);
+    }
   }
 
   &::after {
@@ -64,6 +81,10 @@
       right: 0;
       top: 0;
       bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
 }

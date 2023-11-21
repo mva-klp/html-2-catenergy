@@ -20,6 +20,28 @@
     @media (min-width: $tablet-width) {
       border-bottom: none;
     }
+
+    .site-list__link {
+      @media (min-width: $desktop-width) {
+        color: $color-grey-dark-3;
+      }
+    }
+
+    .site-list__item--current {
+      .site-list__link {
+        &::after {
+          @media (min-width: $desktop-width) {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+
+    &::after {
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
   }
 }
 

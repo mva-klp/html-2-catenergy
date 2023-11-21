@@ -10,6 +10,8 @@
     }
 
     @media (min-width: $desktop-width) {
+      max-width: 1220px;
+      padding: 0;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 80px;
       row-gap: 64px;
@@ -23,12 +25,19 @@
       border: none;
       margin-top: 73px;
     }
+    @media (min-width: $desktop-width) {
+      margin-top: 80px;
+    }
 
     &:nth-of-type(odd) {
       img {
         @media (min-width: $tablet-width) {
           width: 161px;
           margin-top: -45px;
+        }
+
+        @media (min-width: $desktop-width) {
+          margin-top: -52px;
         }
       }
     }
@@ -41,6 +50,10 @@
         @media (min-width: $tablet-width) {
           width: 168px;
           margin-top: -73px;
+        }
+        @media (min-width: $desktop-width) {
+          width: 172px;
+          margin-top: -80px;
         }
       }
     }
